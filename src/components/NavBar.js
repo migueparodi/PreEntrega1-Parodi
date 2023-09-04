@@ -1,18 +1,18 @@
 import React from 'react';
 import { Navbar, Nav } from 'react-bootstrap';
 import CartWidget from './CartWidget ';
+import { Link } from 'react-router-dom';
 
 const NavigationBar = () => {
   return (
     <Navbar bg="light" expand="lg">
-      <Navbar.Brand href="/">NatúYe</Navbar.Brand>
+      <Navbar.Brand as={Link} to="/">NatúYe</Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="mr-auto">
-          <Nav.Link href="/">Inicio</Nav.Link>
-          <Nav.Link href="/productos">Productos</Nav.Link>
-          <Nav.Link href="/pedidos">Pedidos</Nav.Link>
-          <Nav.Link href="/contactanos">Contáctanos</Nav.Link>
+          <Nav.Link as={Link} to="/belleza">Belleza</Nav.Link>
+          <Nav.Link as={Link} to="/higiene">Higiene</Nav.Link>
+          <Nav.Link as={Link} to="/contactanos">Contáctanos</Nav.Link>
         </Nav>
       </Navbar.Collapse>
       <CartWidget />
