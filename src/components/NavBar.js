@@ -12,7 +12,7 @@ const NavigationBar = () => {
         <Nav className="mr-auto">
           <Nav.Link as={Link} to="/belleza">Belleza</Nav.Link>
           <Nav.Link as={Link} to="/higiene">Higiene</Nav.Link>
-          <Nav.Link as={Link} to="/contactanos">Contáctanos</Nav.Link>
+          <Nav.Link as={Link} to="/contactos">Contactos</Nav.Link>
         </Nav>
       </Navbar.Collapse>
       <CartWidget />
